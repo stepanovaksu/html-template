@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Формы в HTML5</title>
+        
+        <style> 
+            body {background-color: blueviolet;}
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form method="post" action="example.php">
+            <p>
+                <label for="login" style="font-size:25px;">Логин :</label>
+                <input  type="placeholder" name="login" id="login" autofocus/>
+            </p>
+            <p>
+                <label for="password" style="font-size: 25px;">Пароль :</label>
+                <input type="password" name="password" id="password" />
+            </p>
+            <p>
+                <label for="age" style="font-size: 25px;">Возраст :</label>
+            <input type="number" step="1" min="1" max="35" id="age" />
+            </p>
+            <p>
+                <label for="email" style="font-size: 25px;">Email :</label>
+                <input type="email" placeholder="user@gmail.com" id="email" name="email"/>
+            </p>
+            <p>
+                <label for="phone" style="font-size: 25px;">Телефон :</label>
+                <input type="tel" placeholder="(XXX)-XXX-XX-XX" id="phone" name="phone"/>
+            </p>
+            <p>
+                <label for="date">День рождение :</label>
+                <input type="date" id="date" name="data"/>
+            </p>
+            <p>
+                <label for="model">Выберите модель :</label>
+                <select id="model" name="model">
+                    <option disabled selected> Выберите модель</option>
+                    <optgroup label="Apple">
+                    <option  value="iPhone 6s"> iPhone 6s</option>
+                    <option  value="iPhone 6s plus"> iPhone 6s Plus</option>
+                </optgroup>
+                <optgroup label="Microsoft">
+                    <option value="lumia 950"> Lumia 950</option>
+                    <option value="nexus 5x"> Nexus 5x</option>
+                    <option value="galaxy s7"> Galaxy s7</option>
+                </optgroup>
+                </select>
+            </p>
+            <p>
+                <button type="submit" formmethod="get" 
+                formaction="index.html">Отправить</button>
+                <button type="reset">Отмена</button>
+            </p>
+        </form>
+        
+        
+        
+        <!-- <h2>Выберите технологии</h2>
+        <p>
+            <input type="checkbox" checked name="HTML5"/>HTML5
+        </p>
+        <p>
+            <input type="checkbox" name="dotnet"/>.NET
+        </p>
+        <p>
+            <input type="checkbox" name="Java"/>Java
+        </p>
+        <h2>Укажите пол</h2>
+        <p>
+            <input type="radio" value="man" checked name="gender"/> мужской 
+        </p>
+        <p>
+            <input type="radio" value="woman" name="gender"/> женский
+        </p> -->
+        <!-- <input list="phoneslist" type="text" name="model" placeholder="Введите модель"/> -->
+    <!-- <datalist id="phoneslist"> -->
+        <!-- <option value="iPhone 6s" label="54000"/> -->
+                <!-- <option value="Lumia 590">335000</option> -->
+                <!-- <option value="Nexus 5x"/> --> 
+            <!-- </datalist> -->
+            <!-- <input type="password"/> -->
+            <!-- <input type="password"/> -->
+            <!-- <input type="radio"/> -->
+            <!-- <input type="checkbox"/> -->
+            <!-- <textarea></textarea> -->
+            <!-- <input type="submit" value="Войти"/> -->
+            <!-- <button>Войти</button> -->
+            
+        
+    </body>
+</html>
